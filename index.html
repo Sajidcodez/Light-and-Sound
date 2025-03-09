@@ -1,0 +1,27 @@
+<!DOCTYPE html>
+<html lang="en">
+
+<head>
+  <meta charset="utf-8">
+  <meta name="viewport" content="width=device-width">
+  <title>Light and Sound Game</title>
+  
+  <link href="styles.css" rel="stylesheet" type="text/css" />
+</head>
+
+<body>
+  <h1>Light and Sound Memory Game</h1>
+  <p>Welcome to the Game! Repeat back the pattern you hear by pressing the buttons</p>
+  <button id="startBtn" onclick="startGame()">Start</button>
+  <button id="stopBtn" onclick="stopGame()">Stop</button>
+  <div id="gameButtonArea">
+    <button id="button1" title="Button 1" onmousedown="startTone(1)" onmouseup="stopTone()" onclick="guess(1)">1</button>
+    <button id="button2" title="Button 2" onmousedown="startTone(2)" onmouseup="stopTone()" onclick="guess(2)">2</button>
+    <button id="button3" title="Button 3" onmousedown="startTone(3)" onmouseup="stopTone()" onclick="guess(3)">3</button>
+    <button id="button4" title="Button 4" onmousedown="startTone(4)" onmouseup="stopTone()" onclick="guess(4)">4</button>
+  </div>
+  
+  <script src="script.js"></script>
+</body>
+
+</html>
